@@ -1,0 +1,85 @@
+dataset_id,dataset_prefix,disease_label,model,metric,value,n_contrasts
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,CellPLM,logfc_spearman,0.14501851643425298,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,CellPLM,top100_abs_jaccard,0.1256109341040004,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,CellPLM,top100_sign_concordance,0.645,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scPRINT,logfc_spearman,0.355792449237214,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scPRINT,top100_abs_jaccard,0.17224299421175793,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scPRINT,top100_sign_concordance,0.69,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scTrilemma,logfc_spearman,0.21073340479083846,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scTrilemma,top100_abs_jaccard,0.20559560765867338,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scTrilemma,top100_sign_concordance,0.6533333333333333,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scVI,logfc_spearman,0.1537990858939029,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scVI,top100_abs_jaccard,0.08182297973402099,6
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,scVI,top100_sign_concordance,0.7050000000000001,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,CellPLM,logfc_spearman,0.21942417062486544,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,CellPLM,top100_abs_jaccard,0.1655008196263034,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,CellPLM,top100_sign_concordance,0.7000000000000001,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scPRINT,logfc_spearman,0.5559374738082647,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scPRINT,top100_abs_jaccard,0.21628665110253364,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scPRINT,top100_sign_concordance,0.755,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scTrilemma,logfc_spearman,0.4301775950835351,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scTrilemma,top100_abs_jaccard,0.24975874637368453,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scTrilemma,top100_sign_concordance,0.8683333333333333,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scVI,logfc_spearman,0.15725220231627943,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scVI,top100_abs_jaccard,0.13790765251873974,6
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,scVI,top100_sign_concordance,0.6366666666666666,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,CellPLM,logfc_spearman,0.41834114406993644,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,CellPLM,top100_abs_jaccard,0.24820651119191453,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,CellPLM,top100_sign_concordance,0.835,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scPRINT,logfc_spearman,0.26637291241508393,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scPRINT,top100_abs_jaccard,0.25756464013452796,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scPRINT,top100_sign_concordance,0.7433333333333333,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scTrilemma,logfc_spearman,0.4487253762266832,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scTrilemma,top100_abs_jaccard,0.40953073803015455,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scTrilemma,top100_sign_concordance,0.9166666666666666,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scVI,logfc_spearman,0.3312945640732159,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scVI,top100_abs_jaccard,0.15178220452841137,6
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,scVI,top100_sign_concordance,0.815,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,CellPLM,logfc_spearman,0.23834585615253778,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,CellPLM,top100_abs_jaccard,0.21799851458488964,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,CellPLM,top100_sign_concordance,0.7116666666666666,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scPRINT,logfc_spearman,0.4062094886445327,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scPRINT,top100_abs_jaccard,0.25278069459251845,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scPRINT,top100_sign_concordance,0.7600000000000001,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scTrilemma,logfc_spearman,0.38606989393266017,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scTrilemma,top100_abs_jaccard,0.41706100483396896,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scTrilemma,top100_sign_concordance,0.8783333333333333,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scVI,logfc_spearman,0.19319733908605533,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scVI,top100_abs_jaccard,0.14005037730774275,6
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,scVI,top100_sign_concordance,0.7233333333333333,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,CellPLM,logfc_spearman,0.26066849884767035,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,CellPLM,top100_abs_jaccard,0.19019191795830723,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,CellPLM,top100_sign_concordance,0.725,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scPRINT,logfc_spearman,0.4947448809578705,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scPRINT,top100_abs_jaccard,0.27145872428642664,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scPRINT,top100_sign_concordance,0.8233333333333334,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scTrilemma,logfc_spearman,0.33377256372901276,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scTrilemma,top100_abs_jaccard,0.29493878145489144,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scTrilemma,top100_sign_concordance,0.815,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scVI,logfc_spearman,0.16340929391154546,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scVI,top100_abs_jaccard,0.08926207748364819,6
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,scVI,top100_sign_concordance,0.6933333333333334,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,CellPLM,logfc_spearman,0.28194418848557024,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,CellPLM,top100_abs_jaccard,0.24632511355003905,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,CellPLM,top100_sign_concordance,0.81,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scPRINT,logfc_spearman,0.5232892025236503,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scPRINT,top100_abs_jaccard,0.29509079378151,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scPRINT,top100_sign_concordance,0.8166666666666668,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scTrilemma,logfc_spearman,0.3919441725772173,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scTrilemma,top100_abs_jaccard,0.38985845468988484,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scTrilemma,top100_sign_concordance,0.915,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scVI,logfc_spearman,0.26048410019084556,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scVI,top100_abs_jaccard,0.17696814167116015,6
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,scVI,top100_sign_concordance,0.7933333333333333,6
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,CellPLM,logfc_spearman,0.1492122090510138,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,CellPLM,top100_abs_jaccard,0.1499854578767453,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,CellPLM,top100_sign_concordance,0.6439999999999999,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scPRINT,logfc_spearman,0.37724636493256203,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scPRINT,top100_abs_jaccard,0.23699099769358734,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scPRINT,top100_sign_concordance,0.772,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scTrilemma,logfc_spearman,0.29000382530535523,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scTrilemma,top100_abs_jaccard,0.3181169904896052,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scTrilemma,top100_sign_concordance,0.79,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scVI,logfc_spearman,0.1319755740419299,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scVI,top100_abs_jaccard,0.08856567390942527,5
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,scVI,top100_sign_concordance,0.618,5

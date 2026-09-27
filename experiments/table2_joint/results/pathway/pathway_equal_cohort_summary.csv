@@ -1,0 +1,9 @@
+model,metric,value,n_cohorts
+cellplm,top10_pathway_jaccard,0.2539105505952707,5
+cellplm,top10_pathway_score_spearman,-0.03776122967946471,5
+scprint,top10_pathway_jaccard,0.2580907273570067,5
+scprint,top10_pathway_score_spearman,-0.08235254301222614,5
+sctrilemma,top10_pathway_jaccard,0.3451399680780916,5
+sctrilemma,top10_pathway_score_spearman,0.22877261652096265,5
+scvi,top10_pathway_jaccard,0.2525125581800009,5
+scvi,top10_pathway_score_spearman,-0.11080570053482623,5

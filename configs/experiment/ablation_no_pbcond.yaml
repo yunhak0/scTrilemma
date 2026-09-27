@@ -1,0 +1,5 @@
+# @package _global_
+# Ablation: remove PB-Cond (standard normal prior instead of the pseudo-bulk-conditioned prior).
+experiment_name: ablation_no_pbcond
+model:
+  tissue_prior_mode: ""
