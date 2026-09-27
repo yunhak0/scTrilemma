@@ -1,0 +1,12 @@
+# Ten held-out datasets from the 2025-11-08 Census release used as the
+# in-training validation subset (one line per dataset_id).
+203025fe-fa99-4d57-81da-458ed8f0c334
+56a4bc14-9407-45fd-8786-f7f6fc87c9dd
+589fe605-6d49-4abe-bff8-1675511c689a
+5ed90bc0-12f3-4354-b314-0ce0dbb96458
+867757c1-3b1a-49d9-a0cd-17767eb160cc
+95d3b0fb-b8a7-4bec-a2e8-cded3222ff07
+98219f72-0f9a-4de9-a859-c81834f24ab1
+9f1a899f-05a0-44c5-8aa9-39df61ae4324
+a24ce10f-5a87-4e1f-a34a-f4fe5fc84052
+b617ee1b-f8c8-4de9-b82b-e803ab93550d

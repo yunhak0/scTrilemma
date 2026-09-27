@@ -1,0 +1,161 @@
+# Training recipe used for the released scTrilemma checkpoint.
+# Ablation variants overlay this file from configs/experiment/ (experiment=<name>).
+defaults:
+  - _self_
+  - experiment: null
+  - override hydra/job_logging: disabled
+
+hydra:
+  job:
+    chdir: true
+
+experiment_name: "sctrilemma"
+
+training:
+  seed: 42
+  batch_size: 256              # per GPU
+  num_workers: 4
+  lr: 2.0e-4
+  weight_decay: 1.0e-4
+  gradient_accumulation_steps: 1
+  max_tokens_per_batch: 2100000
+  batch_buffer_size: 4096
+  crop_size: 4096
+  prefetch_factor: 4
+  persistent_workers: true
+  pin_memory: true
+  val_batch_buffer_size: null
+  val_num_workers: null
+  val_prefetch_factor: null
+  val_persistent_workers: null
+  val_pin_memory: null
+  gene_likelihood: zinb
+  zinb_reduction: per_cell
+  lambda_zinb: 1.0
+  lambda_zinb_end: null
+  lambda_zinb_decay_steps: 0
+  lambda_zinb_trigger_step: 0
+  lambda_kl: 5.0e-4
+  kl_warmup_steps: 2500
+  warmup_steps: null           # null -> 5% of max_steps
+
+data:
+  root: ${oc.env:SCTRILEMMA_DATA_ROOT,/scratch/${oc.env:USER}/datasets/cellxgene}
+  census_version: "20250130"
+  gene_vocab_path: "${data.root}/${data.census_version}/gene_vocab_homo_sapiens_${data.census_version}.json"
+  cell_type_vocab_path: "${data.root}/${data.census_version}/cell_type_vocab_homo_sapiens_${data.census_version}.json"
+  # Group-level inputs built by scripts/preprocessing/2_, 4_ and 5_*.sh.
+  pseudo_bulk_path: "${data.root}/${data.census_version}/pseudo_bulk_dict_with_${data.val_census_version}.pt"
+  tissue_code_path: "${data.root}/${data.census_version}/tissue_codes_k32_with_${data.val_census_version}.pt"
+  min_genes: 5
+  do_normalize: true
+  do_log1p: true
+  target_sum: 10000.0
+  use_raw_expr: true
+  # All training datasets are used for training; validation runs on a fixed
+  # subset of datasets from the later Census release.
+  val_split_ratio: 0.0
+  split_seed: 42
+  val_full: false
+  val_data_root: ${data.root}
+  val_census_version: "20251108"
+  val_subset_manifest: configs/zsb/val_subset_10_ids.txt
+  max_len: null
+  val_crop_size: ${training.crop_size}
+  zero_sampling: false
+  zero_sampling_fraction: 0.0
+  zero_sampling_strategy: random
+  count_weights_cap: null
+  use_count_weights: false
+  cache_path: null
+  # Number of cached shards each data-loader worker reads from at a time when
+  # filling its shuffle buffer, as [step, n] pairs.
+  num_open_shards_schedule:
+    - [0, 8]
+    - [5000, 6]
+    - [10000, 4]
+    - [15000, 2]
+    - [20000, 1]
+
+model:
+  vocab_size: null
+  d_model: 512
+  dropout: 0.1
+  num_latent_tokens: 64
+  num_encoder_layers: 3
+  encoder_heads: 8
+  num_decoder_layers: 3
+  decoder_heads: 8
+  expr_proj_mode: multiplicative
+  repr_pooling: mean
+  logvar_min: -4.0
+  logvar_max: 2.0
+  zi_return_logits: false
+  mu_activation_mode: softmax
+  tissue_code_dim: 32
+  tissue_code_embedding_mode: soft
+  tissue_prior_mode: diagonal
+  tissue_prior_mu_scale: 1.0
+  tissue_prior_logvar_mode: learned
+  decoder_query_mode: z_modulated
+  decoder_query_pooling: same
+  decoder_query_residual_alpha: 0.2
+  repr_pooling_residual_alpha: 0.2
+
+optim:
+  lr: ${training.lr}
+  weight_decay: ${training.weight_decay}
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+sched:
+  name: cosine
+  warmup_steps: ${training.warmup_steps}
+  min_lr: 0.0
+
+trainer:
+  precision: bf16-mixed
+  devices: 4
+  num_nodes: 1
+  strategy: ddp
+  max_epochs: 1
+  max_steps: 25000
+  val_check_interval: 5000
+  check_val_every_n_epoch: 1
+  limit_val_batches: 1.0
+  grad_clip_val: 1.0
+  accumulate_grad_batches: ${training.gradient_accumulation_steps}
+  enable_checkpointing: true
+  ckpt_save_top_k: -1          # keep every validation checkpoint
+  log_every_n_steps: 50
+  deterministic: false
+
+bio_metrics:
+  enabled: true
+  subsample: true
+  max_per_type: 500
+  total_max: 10000
+  k: 50
+  use_faiss: true
+  graph_connectivity: false
+  rank_zero_only: false
+  per_dataset_every_val: true
+
+perf:
+  matmul_precision: high
+  enable_flash_sdp: true
+  enable_cudnn_sdp: true
+  enable_mem_efficient_sdp: true
+  enable_math_sdp: true
+  cudnn_allow_tf32: true
+  cuda_matmul_allow_tf32: true
+
+logging:
+  wandb:
+    enabled: false
+    project: "sctrilemma"
+    entity: null
+    mode: "offline"
+    name: "${experiment_name}"
+    tags: ["sctrilemma"]
+    notes: ""

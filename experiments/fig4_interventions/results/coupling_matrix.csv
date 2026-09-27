@@ -1,0 +1,12 @@
+pushed,pushed_metric,responding,metric,slope,consistency
+identity,silhouette_label,identity,silhouette_label,1.0,0.9662921348314607
+identity,silhouette_label,invariance,bras,-1.753180222744685,1.0
+identity,silhouette_label,fidelity,recon_mse,-0.37026021673878384,1.0
+identity,silhouette_label,fidelity,recon_pearson,-0.7097805632698566,1.0
+invariance,bras,identity,silhouette_label,-0.10259828226651228,0.7066666666666667
+invariance,bras,invariance,bras,1.0,0.9866666666666667
+invariance,bras,fidelity,recon_mse,-0.15551032529519163,0.9866666666666667
+invariance,bras,fidelity,recon_pearson,-0.06533223819320387,0.56
+fidelity,recon_mse,identity,silhouette_label,-0.05853459827040049,0.8426966292134831
+fidelity,recon_mse,invariance,bras,0.11228486150274525,1.0
+fidelity,recon_mse,fidelity,recon_mse,1.0,1.0

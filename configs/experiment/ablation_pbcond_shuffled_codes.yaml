@@ -1,0 +1,7 @@
+# @package _global_
+# PB-Cond control: the group codes are permuted across dataset--donor groups (seed 42), so the
+# prior varies across groups but is no longer aligned with their pseudo-bulk profiles.
+# Build the code file with scripts/preprocessing/6_build_control_codes.sh.
+experiment_name: ablation_pbcond_shuffled_codes
+data:
+  tissue_code_path: "${data.root}/${data.census_version}/tissue_codes_k32_with_${data.val_census_version}_shuffled_seed42.pt"

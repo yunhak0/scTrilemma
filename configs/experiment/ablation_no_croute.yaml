@@ -1,0 +1,6 @@
+# @package _global_
+# Ablation: remove C-Route (decoder queries no longer modulated by the cell representation;
+# the mean-pooled readout is retained).
+experiment_name: ablation_no_croute
+model:
+  decoder_query_mode: "off"

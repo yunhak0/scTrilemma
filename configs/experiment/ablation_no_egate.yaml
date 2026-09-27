@@ -1,0 +1,5 @@
+# @package _global_
+# Ablation: remove E-Gate (linear instead of expression-gated gene encoding).
+experiment_name: ablation_no_egate
+model:
+  expr_proj_mode: linear

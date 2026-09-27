@@ -1,0 +1,8 @@
+dataset_id,dataset_prefix,disease_label,sampled_cells,selected_contrasts,common_genes
+203025fe-fa99-4d57-81da-458ed8f0c334,203025fe,Alzheimer disease,2500,6,1877
+30c2a6fd-d547-460f-a5e7-44c62a2af7ad,30c2a6fd,open-angle glaucoma,2500,6,1230
+829a3cd1-a466-49f1-b2e9-d3f6b7f392e2,829a3cd1,colorectal cancer,2500,6,1811
+84cfa5aa-a0d1-415e-ac47-eb66c9cf8170,84cfa5aa,intestinal failure–associated liver disease,2500,6,2045
+867757c1-3b1a-49d9-a0cd-17767eb160cc,867757c1,obstructive nephropathy,2500,6,1524
+e3ed2ba4-edf5-40ac-8750-8a417ad1eefe,e3ed2ba4,colorectal carcinoma || metastatic malignant neoplasm,2500,6,2327
+e51bae9a-c747-4b64-904a-4da7cda218ab,e51bae9a,type 2 diabetes mellitus,2500,5,2211

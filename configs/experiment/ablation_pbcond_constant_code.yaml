@@ -1,0 +1,7 @@
+# @package _global_
+# PB-Cond control: every dataset--donor group receives the same code (the global mean soft
+# assignment), i.e. a learned but unconditional prior.
+# Build the code file with scripts/preprocessing/6_build_control_codes.sh.
+experiment_name: ablation_pbcond_constant_code
+data:
+  tissue_code_path: "${data.root}/${data.census_version}/tissue_codes_k32_with_${data.val_census_version}_constant_mean.pt"

@@ -1,0 +1,3 @@
+# @package _global_
+# Released recipe retrained unchanged (training-variability reference for the ablation).
+experiment_name: ablation_full_retrained

@@ -1,0 +1,17 @@
+baseline,metric,n_pairs,wins,ties,losses,mean_paired_difference
+scvi,biological_identity,100,59,6,35,0.016205190642690655
+scvi,biological_state,100,70,3,27,0.02733235514485517
+scvi,context_invariance,100,85,0,15,0.04468628740044476
+scvi,donor_bras,100,99,0,1,0.13222415030002593
+scvi,local_donor_mixing,100,31,0,69,-0.036065235389610394
+scvi,expression_fidelity,100,99,0,1,0.12646777246822266
+scvi,deg_jaccard,100,100,0,0,0.15499541949332232
+scvi,deg_sign,100,84,0,16,0.0701249666999667
+cellplm,biological_identity,100,76,1,23,0.0655928862803863
+cellplm,biological_state,100,75,4,21,0.03494565850815853
+cellplm,context_invariance,100,80,0,20,0.017485379719548878
+cellplm,donor_bras,100,100,0,0,0.22416100919246673
+cellplm,local_donor_mixing,100,4,0,96,-0.07978079378954377
+cellplm,expression_fidelity,100,99,0,1,0.11914634944140019
+cellplm,deg_jaccard,100,100,0,0,0.10176020613485212
+cellplm,deg_sign,100,92,1,7,0.08103645521145524
